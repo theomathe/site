@@ -1,0 +1,276 @@
+
+#background-video {
+
+object-fit: cover;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+
+
+.gif {
+
+  object-fit: cover;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+  }
+
+
+body {
+
+margin: 0;
+
+}
+
+.logo {
+
+width: 5%;
+padding-left: 25px;
+margin-top: 30px;
+
+
+}
+
+nav {
+z-index: 9999;
+width: 100%;
+position: fixed;
+margin-top: 20px;
+
+
+}
+
+.container {
+
+  float: right;
+       display: flex;
+align-items: center;
+justify-content: center;
+       gap: 20px;
+       top: 20px;
+       left: 20px;
+    padding: 20px;
+
+   }
+   .menu-burger {
+       width: 40px;
+       height: 40px;
+       cursor: pointer;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       gap: 10px;
+       position: relative;
+
+   }
+   .bar {
+       width: 40px;
+       height: 8px;
+       background: black;
+      outline: none;
+       position: absolute;
+       transition: all 0.3s ease;
+   }
+   .bar:nth-child(1) {
+       top: 10px;
+   }
+   .bar:nth-child(2) {
+       bottom: 10px;
+   }
+
+   .menu-burger.active .bar:nth-child(1) {
+       transform: rotate(45deg) translate(4.5px, 4.5px);
+   }
+   .menu-burger.active .bar:nth-child(2) {
+       transform: rotate(-45deg) translate(4.5px, -4.5px);
+   }
+
+   #navMenu {
+
+
+       gap: 25px;
+       align-items: center;
+display: block;
+
+
+   }
+      #navMenu  a {
+        animation: fadeIn 1s;
+       color: black;
+       text-decoration: none;
+       font-family: "neue-haas-grotesk-display", sans-serif;
+       font-weight: 700;
+       font-style: normal;
+     font-size: 2vw;
+       transition: color 0.3s ease;
+       padding: 15px;
+
+
+
+
+   }
+      #navMenu  a:hover {
+      opacity: 50%;
+   }
+
+      #navMenu.hidden {
+       display: none;
+
+   }
+
+              @keyframes fadeIn {
+                  from { opacity: 0; transform: translateX(-10px); }
+                  to { opacity: 1; transform: translateX(0); }
+              }
+
+
+@media (max-width: 768px){
+
+  .logo {
+
+  width: 10%;
+  padding-left: 25px;
+  margin-top: 30px;
+
+  }
+
+  #navMenu  a {
+   color: black;
+   text-decoration: none;
+   font-family: "neue-haas-grotesk-display", sans-serif;
+   font-weight: 700;
+   font-style: normal;
+ font-size: 5vw;
+   transition: color 0.3s ease;
+   padding: 10px;
+}
+
+}
+
+.infos {
+
+padding: 35px;
+padding-top: 130px;
+padding-bottom: 100px;
+
+}
+
+.infos {
+
+padding-left: 32px;
+position: relative;
+}
+
+.fr {
+
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+font-size: 5vw;
+margin-right: 50px;
+}
+
+.eng {
+
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 5vw;
+  margin-right: 50px;
+
+}
+
+
+h1 {
+
+font-size: 4vw;
+font-weight: 700;
+font-family: "neue-haas-grotesk-display", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+}
+
+.broke {
+
+
+font-family: "neue-haas-grotesk-display", sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: 5vw;
+
+
+
+}
+
+.contact {
+
+padding-top: 25px;
+
+}
+
+.social {
+
+  font-size: 4vw;
+  font-weight: 700;
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+
+.insta {
+
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 5vw;
+  color: black;
+}
+
+.mail {
+
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 5vw;
+  color: black;
+
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(700px, 1fr)); /* Crée des colonnes flexibles */
+  gap: 25px; /* Espacement entre les images */
+  padding: 16px;
+
+}
+
+/* Images dans la grille */
+.image-grid img {
+  width: 100%; /* Les images remplissent entièrement leurs cellules */
+  height: auto; /* Garde le ratio d'aspect de l'image */
+
+  object-fit: cover; /* L'image couvre entièrement la cellule sans déformation */
+}
+
+/* Pour les écrans plus petits */
+@media (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr)); /* Ajuste les colonnes à 150px sur les petits écrans */
+  }
+}
+
+/* Pour les très petits écrans */
+@media (max-width: 480px) {
+  .image-grid {
+    grid-template-columns: 1fr; /* Une seule colonne sur les très petits écrans */
+  }
+}

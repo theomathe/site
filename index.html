@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+<meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://use.typekit.net/mry0wqy.css">
+<link rel="stylesheet" href="https://use.typekit.net/mry0wqy.css">
+<link href="style.css" rel="stylesheet">
+
+
+
+    <title>test</title>
+  </head>
+  <body>
+
+    <!--loading page-->
+
+    <div class="gif" id="loading">
+        <img src="loading.gif" alt="Loading...">
+    </div>
+
+<header>
+
+
+
+  <nav>
+
+
+    <img class="logo" src="images/logosite.png">
+    <!--<button class="menu-toggle" onclick="toggleMenu()" aria-label="Menu">☰</button>-->
+
+    <div class="container">
+
+
+            <div id="navMenu" class="hidden">
+                <a href="#portfolio">Portfolio</a>
+                <a href="#infos">Contact</a>
+            </div>
+
+      <div class="menu-burger" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+      </div>
+
+
+  </div>
+
+
+
+</nav>
+
+</header>
+
+
+
+
+    <video id="background-video" autoplay loop muted>
+
+    <source src="images/intro.mp4" type="video/mp4">
+
+    </video>
+
+
+
+
+<div data-aos="fade-up" data-aos-duration="500">
+  <div id="infos" class="infos">
+
+      <h1> /Hello <br>  </h1>
+
+          <div class="fr">
+              <p> Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua.
+     </p>
+          </div>
+          <p class="broke"> - </p>
+    <div class="eng">
+      <p> Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua.
+           </p>
+    </div>
+
+
+
+<div class="contact">
+<p class="social"> /social </p>
+<a class="insta" href="https://www.instagram.com/theo__mathe/" target="_blank"> instagram </a> <br><br>
+<a class="mail" href="mailto:theomathe.contact@gmail.com"> mail </a>
+</div>
+</div>
+</div>
+
+
+
+<div data-aos="fade-up" data-aos-duration="500">
+
+<div id="portfolio" class="image-grid">
+
+  <a class="showreel" href="portfolio/showreel.html">
+    <img class="page2" src="images/showreel1.jpg"></a>
+
+    <a class="sifu" href="portfolio/sifu.html">
+      <img class="page2" src="images/sifu.jpg"></a>
+
+    <a class="zwave" href="portfolio/zwave.html">
+      <img class="page3" src="images/zwave2.png"></a>
+
+    <a class="nordvpn" href="portfolio/nordvpn.html">
+      <img class="page4" src="images/nordvpn.jpg"></a>
+
+
+
+  </div>
+
+</div>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+
+// On attend que la page soit complètement chargée
+      window.addEventListener('load', () => {
+          // Cacher le gif de chargement
+          document.getElementById('loading').style.display = 'none';
+          // Afficher le contenu principal de la page
+          document.getElementById('content').style.display = 'block';
+      });
+</script>
+
+<script>   function toggleMenu() {
+            const burger = document.querySelector('.menu-burger');
+            const nav = document.getElementById('navMenu');
+
+            burger.classList.toggle('active');
+            nav.classList.toggle('hidden');
+        }
+  </script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+
+</script>
+<script>
+  AOS.init();
+</script>
+
+
+
+  </body>
+
+
+
+</html>
