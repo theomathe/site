@@ -245,6 +245,12 @@ padding-top: 25px;
 
 }
 
+.image-grid a:hover {
+
+opacity: 75%;
+
+}
+
 .image-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(700px, 1fr)); /* Crée des colonnes flexibles */
