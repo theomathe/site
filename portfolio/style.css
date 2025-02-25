@@ -1,0 +1,97 @@
+.logo {
+
+padding: 25px;
+overflow: hidden;
+margin-top: 20px;
+
+
+}
+
+nav {
+
+  overflow: hidden;
+
+top: 0;
+
+}
+
+h1 {
+
+padding-top: 25px;
+font-size: 15vw;
+font-family: "neutronic-heavy", sans-serif;
+font-weight: 900;
+font-style: normal;
+text-align: center;
+
+
+}
+
+.txt {
+  padding-top: 50px;
+  padding-left: 32px;
+  position: relative;
+  padding-bottom: 150px;
+width: 50%;
+font-family: "neue-haas-grotesk-display", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.date {
+
+font-size: 1.5vw;
+margin: 0;
+font-family: "neue-haas-grotesk-display", sans-serif;
+font-weight: 100;
+font-style: normal;
+
+}
+
+.description {
+
+  font-size: 3vw;
+  font-family: "itc-avant-garde-gothic-pro", sans-serif;
+  margin-top: 10px;
+
+}
+
+.infos {
+
+font-size: 1.5vw;
+margin: 0;
+font-family: "neue-haas-grotesk-display", sans-serif;
+font-weight: 100;
+font-style: normal;
+
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(700px, 1fr)); /* Crée des colonnes flexibles */
+  gap: 16px; /* Espacement entre les images */
+  padding: 16px;
+
+}
+
+/* Images dans la grille */
+.image-grid img {
+  width: 100%; /* Les images remplissent entièrement leurs cellules */
+  height: auto; /* Garde le ratio d'aspect de l'image */
+
+  object-fit: cover; /* L'image couvre entièrement la cellule sans déformation */
+}
+
+/* Pour les écrans plus petits */
+@media (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Ajuste les colonnes à 150px sur les petits écrans */
+  }
+}
+
+/* Pour les très petits écrans */
+@media (max-width: 480px) {
+  .image-grid {
+    grid-template-columns: 1fr; /* Une seule colonne sur les très petits écrans */
+  }
+}
