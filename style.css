@@ -31,7 +31,7 @@ margin: 0;
 
 width: 5%;
 padding-left: 25px;
-margin-top: 30px;
+margin-top: 40px;
 
 
 }
@@ -71,10 +71,10 @@ justify-content: center;
    }
    .bar {
        width: 40px;
-       height: 8px;
+       height: 10px;
        background: black;
       outline: none;
-       position: absolute;
+
        transition: all 0.3s ease;
    }
    .bar:nth-child(1) {
@@ -85,10 +85,10 @@ justify-content: center;
    }
 
    .menu-burger.active .bar:nth-child(1) {
-       transform: rotate(45deg) translate(4.5px, 4.5px);
+       transform: rotate(45deg) translate(7px, 7px);
    }
    .menu-burger.active .bar:nth-child(2) {
-       transform: rotate(-45deg) translate(4.5px, -4.5px);
+       transform: rotate(-45deg) translate(7px, -7px);
    }
 
    #navMenu {
