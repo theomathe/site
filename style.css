@@ -311,6 +311,19 @@ opacity: 75%;
   .image-grid {
     grid-template-columns: repeat(auto-fill, minmax(450px, 1fr)); /* Ajuste les colonnes à 150px sur les petits écrans */
   }
+
+  .txt-portfolio {
+
+    text-decoration: none;
+    font-size: 2.2vw;
+    font-weight: 700;
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-style: normal;
+    color: black;
+
+
+  }
+
 }
 
 /* Pour les très petits écrans */
