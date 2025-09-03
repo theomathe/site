@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/mry0wqy.css">
+    <link rel="stylesheet" href="https://use.typekit.net/mry0wqy.css">
+<title>loading page</title>
+
+    <script>
+    window.addEventListener('load', () => {
+              const loadingScreen = document.getElementById('loading-screen');
+              const countdownText = document.getElementById('countdown-text');
+              const videoContainer = document.getElementById('video-container');
+              const video = document.querySelector('video');
+
+              let percentage = 0;
+              const duration = 2000; // Durée totale du compte à rebours en millisecondes
+let delay = 10;
+              const updateCountdown = () => {
+                  countdownText.textContent = `${percentage}%`;
+                  percentage++;
+
+                  if (percentage <= 100) {
+if (percentage >=90) {
+
+                    delay = delay * 1.2; // Augmenter le délai à chaque itération (ralentir progressivement)
+}
+                    setTimeout(updateCountdown, delay);
+                  } else {
+                      loadingScreen.style.display = 'none';
+                      videoContainer.style.display = 'block';
+                      video.play();
+                  }
+              };
+
+              updateCountdown();
+
+              video.addEventListener('ended', () => {
+                  videoContainer.style.display = 'none';
+                  countdownText.style.display='none';
+              });
+          });
+    </script>
+</head>
+<body>
+<div class="countdown-text" id="countdown-text">0%</div>
+  <div id="loading-screen">
+<img class="gif" src="loading.gif" alt="">
+
+     </div>
+
+
+     <div id="video-container">
+         <video src="loading2.mp4" muted></video>
+
+     </div>
+</body>
+</html>

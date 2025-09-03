@@ -219,6 +219,23 @@ font-style: normal;
 
 }
 
+.txt-portfolio {
+
+  text-decoration: none;
+  font-size: 0.9vw;
+  font-weight: 700;
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-style: normal;
+  color: black;
+
+
+}
+
+
+
+a {  text-decoration: none;}
+
+
 .broke {
 
 
