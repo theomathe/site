@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+<meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://use.typekit.net/mry0wqy.css">
+<link rel="stylesheet" href="https://use.typekit.net/mry0wqy.css">
+<link href="style.css" rel="stylesheet">
+
+<link rel="icon" type="image/png" href="images/favicon.jpg">
+
+    <title>Théo Mathé</title>
+
+  </head>
+  <body>
+
+<header>
+
+
+
+  <nav>
+
+
+    <img class="logo" src="images/logosite.png">
+    <!--<button class="menu-toggle" onclick="toggleMenu()" aria-label="Menu">☰</button>-->
+
+    <div class="container">
+
+
+            <div id="navMenu" class="hidden">
+                <a href="#portfolio">Portfolio</a>
+                <a href="#infos">Contact</a>
+            </div>
+
+      <div class="menu-burger" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+      </div>
+
+
+  </div>
+
+
+
+</nav>
+
+</header>
+
+<div class="bloc">
+
+    <video autoplay loop muted playsinline id="background-video">
+
+    <source src="images/intro.mp4" type="video/mp4">
+
+    </video>
+</div>
+
+<div data-aos="fade-up" data-aos-duration="500">
+
+  <div id="infos" class="infos">
+
+      <h1> /Hello <br>  </h1>
+
+          <div class="fr">
+              <p> Je m'appelle Théo, je suis animateur 2D et motion designer freelance depuis 2020 et basé au Havre.<br>
+                Je suis très curieux et passionné par tout ce qui touche au numérique et à l'animation. Je travaille principalement
+                l'animation traditionnelle, le storyboarding et l'illustration, mais j'ai aussi eu l'occasion de travailler l'animation 3D (Blender),
+                le compositing ou encore le VFX au cours de ma carrière. Sinon j'aime la cuisine et les jeux vidéos.
+     </p>
+          </div>
+
+          <p class="broke"> - </p>
+
+          <div class="eng">
+              <p> My name is Théo, I'm a 2D animator and motion designer since 2020 and based in France. <br>
+                I'm very curious and passionate with everything related to digital and animation. I mostly work traditionnal animation, storyboarding and illustration, but I also had the opportunity
+                to work 3D animation (Blender), compositing or the VFX during my career. Otherwise, I like cooking and video games.
+            </p>
+          </div>
+
+
+
+        <div class="contact">
+            <p class="social"> /social </p>
+            <a class="insta" href="https://www.instagram.com/theo__mathe/" target="_blank"> instagram </a> <br><br>
+            <a class="mail" href="mailto:theomathe.contact@gmail.com"> mail </a>
+      </div>
+  </div>
+</div>
+
+
+
+<div data-aos="fade-up" data-aos-duration="500">
+
+<div id="portfolio" class="image-grid">
+
+  <a class="showreel" href="portfolio/showreel.html">
+    <img class="page2" src="images/showreel1.jpg">
+<div class="txt-portfolio"> <p>  Showreel - 2024 </p> </div>
+  </a>
+
+
+
+  <a class="summum" href="portfolio/summum.html">
+    <img class="page8" src="images/summum.png">
+<div class="txt-portfolio"> <p>  Summum   </p> </div>
+  </a>
+
+  <a class="amyplant" href="portfolio/amyplant.html">
+    <img class="page10" src="images/amyplant.jpg">
+<div class="txt-portfolio"> <p> Amy Plant  /  Amnesty International </p> </div>
+  </a>
+
+    <a class="safran" href="portfolio/safran.html">
+      <img class="page9" src="images/safran.jpg">
+<div class="txt-portfolio"> <p> Safran  -  Kermesse </p> </div>
+    </a>
+
+
+      <a class="guardians" href="portfolio/guardians.html">
+        <img class="page7" src="images/guardian.png">
+        <div class="txt-portfolio"> <p> Guardians</p> </div>
+
+      </a>
+
+      <a class="chainless" href="portfolio/chainless.html">
+        <img class="page2" src="images/chainless.png">
+        <div class="txt-portfolio"> <p> Chainless - Pure love </p> </div>
+
+      </a>
+
+        <a class="aéroport" href="portfolio/aéroport.html">
+          <img class="page5" src="images/aéroport.png">
+          <div class="txt-portfolio"> <p> Aéroport Deauville / Caen </p> </div>
+
+        </a>
+
+        <a class="hcgleam" href="portfolio/HCgleam.html">
+            <img class="page8" src="images/hcgleam.jpg">
+            <div class="txt-portfolio"> <p> HC Gleam </p> </div>
+
+          </a>
+
+          <a class="nordvpn" href="portfolio/nordvpn.html">
+            <img class="page4" src="images/nordvpn.jpg">
+            <div class="txt-portfolio"> <p> Nord VPN </p> </div>
+
+          </a>
+
+
+  <a class="zwave" href="portfolio/zwave.html">
+    <img class="page3" src="images/zwave2.png">
+    <div class="txt-portfolio"> <p> Zwave </p> </div>
+
+  </a>
+
+  <a class="blackpage" href="portfolio/blackpage.html">
+    <img class="page6" src="images/blackpage.jpg">
+    <div class="txt-portfolio"> <p> Black Page </p> </div>
+
+  </a>
+
+
+
+
+  </div>
+
+</div>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+<script>   function toggleMenu() {
+            const burger = document.querySelector('.menu-burger');
+            const nav = document.getElementById('navMenu');
+
+            burger.classList.toggle('active');
+            nav.classList.toggle('hidden');
+        }
+  </script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+
+</script>
+<script>
+  AOS.init();
+</script>
+
+
+
+  </body>
+
+
+
+</html>
