@@ -307,6 +307,98 @@ opacity: 75%;
   object-fit: cover; /* L'image couvre entièrement la cellule sans déformation */
 }
 
+.footer {
+
+height: 20vh;
+background-color: black;
+display: flex;
+
+flex-direction: row;
+
+
+}
+
+.social_footer {
+
+flex: 25%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+
+.insta_footer {
+
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2vw;
+  color: white;
+  text-decoration: underline;
+
+
+}
+
+.mail_footer {
+
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2vw;
+  color: white;
+  text-decoration: underline;
+
+
+}
+
+
+
+.logo_footer_container {
+
+  flex: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.logo_footer {
+
+width: 15%;
+
+}
+
+.text_footer {
+
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+color: white;
+
+}
+
+.profession {
+
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-weight: 400;
+  font-size: 1vw;
+  margin: 0;
+
+}
+
+.nom {
+
+  font-weight: 700;
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-size: 2vw;
+  margin: 0;
+
+
+}
+
 /* Pour les écrans plus petits */
 @media (max-width: 768px) {
   .image-grid {
@@ -322,8 +414,19 @@ opacity: 75%;
     font-style: normal;
     color: black;
 
+  }
+
+  .footer {
+
+  height: 10vh;
+  background-color: black;
+  display: flex;
+
+  flex-direction: row;
+
 
   }
+
 
 }
 
