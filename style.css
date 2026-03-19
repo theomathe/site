@@ -67,6 +67,7 @@ justify-content: center;
     padding: 20px;
 
    }
+
    .menu-burger {
        width: 40px;
        height: 40px;
@@ -194,7 +195,7 @@ position: relative;
   font-family: "neue-haas-grotesk-display", sans-serif;
   font-weight: 400;
   font-style: normal;
-font-size: 4vw;
+font-size: 3vw;
 margin-right: 25px;
 }
 
@@ -203,7 +204,7 @@ margin-right: 25px;
   font-family: "neue-haas-grotesk-display", sans-serif;
 
   font-style: normal;
-  font-size: 4vw;
+  font-size: 3vw;
   margin-right: 25px;
 font-weight: 400;
 }
