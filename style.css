@@ -310,7 +310,7 @@ opacity: 75%;
 .footer {
 
 height: 20vh;
-background-color: black;
+
 display: flex;
 
 flex-direction: row;
@@ -331,10 +331,10 @@ align-items: center;
 .insta_footer {
 
   font-family: "neue-haas-grotesk-display", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
-  font-size: 2vw;
-  color: white;
+  font-size: 1.3vw;
+color: black;
   text-decoration: underline;
 
 
@@ -343,10 +343,10 @@ align-items: center;
 .mail_footer {
 
   font-family: "neue-haas-grotesk-display", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
-  font-size: 2vw;
-  color: white;
+  font-size: 1.3vw;
+color: black;
   text-decoration: underline;
 
 
@@ -360,6 +360,7 @@ align-items: center;
   display: flex;
   justify-content: center;
   align-items: center;
+
 
 }
 
@@ -376,15 +377,15 @@ width: 15%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-color: white;
 
+color: black;
 }
 
 .profession {
 
   font-family: "neue-haas-grotesk-display", sans-serif;
   font-weight: 400;
-  font-size: 1vw;
+  font-size: 0.7vw;
   margin: 0;
 
 }
@@ -393,7 +394,7 @@ color: white;
 
   font-weight: 700;
   font-family: "neue-haas-grotesk-display", sans-serif;
-  font-size: 2vw;
+  font-size: 1.3vw;
   margin: 0;
 
 }
@@ -427,7 +428,7 @@ color: white;
   .footer {
 
   height: 10vh;
-  background-color: black;
+
   display: flex;
 
   flex-direction: row;
